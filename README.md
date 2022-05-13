@@ -11,5 +11,5 @@ This website can be accessed at https://kevinleekwlee.github.io/horiseon-refract
 Below is a screenshot of the website. 
 
 ```md
-![alt text](assets/images/kevinleekwlee.github.io_horiseon-refractored_.png)
+![alt text](assets/images/screenshot.png)
 ```
