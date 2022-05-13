@@ -1,0 +1,272 @@
+/* This is a global selector that applies to the entire site. Box sizing determines how width and height are calculated. The border-box tells the browser to absorb any border or padding within the specified width. There is no padding or margins in this global selector.*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*This is defining the background colour of the website (body).*/
+
+body {
+    background-color: #d9dcd6;
+}
+
+/*This is creating the visual bar at the top of the site that the nav tools and brand logo are sitting on. It also defines the font families for the text in this header element.*/
+
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+/*This selects h1 within the header. Specifically, header h1 is the brand logo in this case. The display in-line block is commonly used for navigation bars and makes it horizontal while respecting the top and bottom margins. The font size applies to the entire brand logo.*/
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+/*This selects the class .seo within h1 within the header element. It defines the colour of the s, e, and o letters within the brand logo/name Horiseon. Differentiating the colour of these three letters aims to emphasize the SEO services that this marketing agency provides.*/
+
+header h1 .seo {
+    color: #d9dcd6;
+}
+
+/*This determines the positioning (padding, margin, and float) of the three navigation bar selections as well as the font family and font size.*/
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/*This disables any visual markers (bullet points and emoticons) that would show in a list.*/
+
+header nav ul {
+    list-style-type: none;
+}
+
+/*This determines the space between the 3 navigation link selections. It adds a margin to the left of each list item, which visually, appears as the space between the 3 navigation links.*/
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/*This determines the text colour and no decoration for the link display titles which in this case, are the navigation links.*/
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*This sets the font size of all the p tags, which is all the paragraphs on the website.*/
+
+p {
+    font-size: 16px;
+}
+
+/*This is the big hero image at the start of the page with the marketing meeting. It determines the sizing and positioning and links it to a .jpg in the images folder.*/
+
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* This addresses the float left class which is the image in the Search Engine Optimization block and image in the Social Media Marketing block. It puts the image on the left side. There is also a margin added on the right side.*/
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+/* This addresses the float right class which is the image in the Online Reputation Management block. It puts the image on the right side. There is also a margin added on the right side.*/
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/* This determines the width of the block to be 75% of the total width of the screen with a margin of 25px to the left.*/
+
+section {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* This determines the attributes of the aside block on the website including the positioning and colour. It also determines the font of the content in the aside element.*/
+
+aside {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+/* ID selector for benefit-lead. Determines the margin and text colour. */
+
+#benefit-lead {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+/* ID selector for benefit-brand. Determines the margin and text colour. */
+
+#benefit-brand {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+/* ID selector for benefit-cost. Determines the margin and text colour. */
+
+#benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+/* Selects h3 within the ID benefit-lead. Determines the margin and text alignment. */
+
+#benefit-lead h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Selects h3 within the ID benefit-brand. Determines the margin and text alignment. */
+
+#benefit-brand h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Selects h3 within the ID benefit-cost. Determines the margin and text alignment. */
+
+#benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Selects img within the ID benefit-lead. Block display takes the full width available and always starts on a new line. Max width limits the width to 150px. A 10px margin is set.*/
+
+#benefit-lead img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+
+/* Selects img within the ID benefit-brand. Block display takes the full width available and always starts on a new line. Max width limits the width to 150px. A 10px margin is set.*/
+
+#benefit-brand img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+
+/* Selects img within the ID benefit-cost. Block display takes the full width available and always starts on a new line. Max width limits the width to 150px. A 10px margin is set.*/
+
+#benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/* ID selector. This determines the attributes of this article within the section on the website including the positioning and colour. It also determines the font of the content in the article element.*/
+
+#search-engine-optimization {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* ID selector. This determines the attributes of this article within the section on the website including the positioning and colour. It also determines the font of the content in the article element.*/
+
+#online-reputation-management {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* ID selector. This determines the attributes of this article within the section on the website including the positioning and colour. It also determines the font of the content in the article element.*/
+
+#social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* Selects the image within this ID. Sets a max height of 200px. */
+
+#search-engine-optimization img {
+    max-height: 200px;
+}
+
+/* Selects the image within this ID. Sets a max height of 200px. */
+
+#online-reputation-management img {
+    max-height: 200px;
+}
+
+/* Selects the image within this ID. Sets a max height of 200px. */
+
+#social-media-marketing img {
+    max-height: 200px;
+}
+
+/* Selects the header (h2) in this ID. Adds a 20px margin to the bottom and sets the font size to 36px.*/
+
+#search-engine-optimization h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* Selects the header (h2) in this ID. Adds a 20px margin to the bottom and sets the font size to 36px.*/
+
+#online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* Selects the header (h2) in this ID. Adds a 20px margin to the bottom and sets the font size to 36px.*/
+
+#social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* Selects the footer element. Sets the font in this element, the text alignment to center, adds 30px of padding and does not allow floating items on either side. */
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+/* Selects the header (h2) within the footer element. Sets the font size to 20px. */
+
+footer h2 {
+    font-size: 20px;
+}
