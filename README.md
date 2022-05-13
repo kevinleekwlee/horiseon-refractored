@@ -1,4 +1,4 @@
-# Horiseon Social Solution Services Code Refractored
+# Horiseon Refractored
 
 ## Description
 
